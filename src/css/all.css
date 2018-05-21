@@ -1,4 +1,27 @@
-
 body {
   font-family: "Microsoft JhengHei", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1366px;
+}
+/* 只顯示兩行文字 */
+p {
+  overflow : hidden;
+  text-overflow : ellipsis;
+  height:3em;
+  width: auto;
+}
+
+/* 游標經過，圖片變大 */
+div.card img {
+  transition: transform 1s;
+}
+div.card:hover img {
+  transform: scale(1.1); 
+}
+
+/* 卡片瀑布流 */
+.card-columns {
+  column-gap: 20px;
+  column-count: 4;
 }
